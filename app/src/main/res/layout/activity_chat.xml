@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+
+    tools:context="com.example.bankaiapp.ChatActivity">
+
+    <TextView
+        android:id="@+id/chatHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:padding="16dp"
+        android:background="#F8F8F8"
+        android:textColor="#888888"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="4dp"
+        android:elevation="4dp"/>
+
+    <Button
+        android:id="@+id/btnClearChat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Clear chat"
+        android:backgroundTint="#FF5252" />
+
+    <ScrollView
+        android:id="@+id/chatScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/inputArea"
+        android:layout_below="@id/chatHeader">
+
+        <LinearLayout
+            android:id="@+id/chatMessagesContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp" />
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_above="@id/inputArea"
+        android:id="@+id/inputArea"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:padding="8dp"
+        android:background="#FFFFFF">
+
+        <EditText
+            android:id="@+id/etMessage"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Type a message..."
+            android:padding="12dp"
+            android:background="@android:drawable/editbox_background"/>
+
+        <Button
+            android:id="@+id/btnSend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="send"
+            android:layout_gravity="end"
+            android:textSize="12sp"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#2196F3" />
+    </LinearLayout>
+</RelativeLayout>

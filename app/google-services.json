@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "397015953783",
+    "project_id": "ankaiapp",
+    "storage_bucket": "ankaiapp.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:397015953783:android:06046a05537131a688b172",
+        "android_client_info": {
+          "package_name": "com.example.bankaiapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBZ0Myh_GI5Q_nG_nRbLOYwmVH1W2squDk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
